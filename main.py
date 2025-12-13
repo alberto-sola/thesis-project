@@ -9,5 +9,10 @@ class Person:
 
 
 if __name__ == '__main__':
-    person = Person(name='Ada Lovelace', age=36)
-    print(person.greet())
+    # person = Person(name='Ada Lovelace', age=36)
+    # print(person.greet())
+
+    txt = "Free it's always good, ok? Free to go."
+
+    if 'Free' in txt:
+        print('Free is present')
