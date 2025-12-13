@@ -6,4 +6,16 @@ df <- data.frame(
   stringsAsFactors = FALSE
 )
 
-print(df)
+
+# Example ggplot using the df data frame
+library(ggplot2)
+
+ggplot(df, aes(x = category, y = value, fill = category)) +
+  geom_col(width = 0.6, color = "black") +
+  labs(
+    title = "Example ggplot from df",
+    x = "Category",
+    y = "Value"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(legend.position = "none")
